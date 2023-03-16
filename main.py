@@ -34,11 +34,12 @@ def main():
         digit = int(digit)
     else:
         print('Необходимо ввести число!')
-        return 
-    
+        return
+
     arr = selection_sort(arr)
+    print('Отсортированный массив:', arr)
     index = binary_search(arr, digit)
-    
+
     if index == -1:
         print(f'Число {digit} не соответствует заданному условию')
     else:
@@ -47,3 +48,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
